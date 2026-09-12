@@ -72,7 +72,7 @@ ReAct 的节奏是：观察当前状态 -> 选择一个工具行动 -> 查看工
 """.strip()
 
 def main() -> None:
-    from langchain.agents import AgentExecutor, create_tool_calling_agent
+    from langchain_classic.agents import AgentExecutor, create_tool_calling_agent
     from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 
     task = " ".join(sys.argv[1:]).strip() or DEFAULT_TASK
